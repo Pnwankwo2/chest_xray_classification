@@ -1,0 +1,21 @@
+Column name and description
+
+- newid: anonymised ID
+
+- lact_num: lactation number (number of times the cow has calfed)
+
+- calv_date: date of calving
+
+- alp_date: date of the first record taken in the alp (usually shortly after the arrival of the animal in the alp)
+
+- avg_thi3: temperature humidity index, averaged over 3 days before the records, average over the 3 records taken in the alp
+
+- avg_thi30: temperature humidity index, averaged over 30 days before the records, average over the 3 records taken in the alp
+
+- avg_csi3: cold stress index, averaged over 3days before the records, average over the 3 records taken in the alp
+
+- avg_csi30: tcold stress index, averaged over 30 days before the records, average over the 3 records taken in the alp
+
+- avg_precspring: average precipitation during spring (April to July) of the year in which alping takes place, in mm/month
+
+- avg_milk: average quantity of milk over 3 milk records taken in the alp (kg) 
