@@ -1,4 +1,5 @@
 # Milking the Data
+![alt text](Resources/banner_image.jpg)
 ## Milk Production Prediction
 The Project Goal is to build an Artificial Neural Network (ANN) to accurately predict the average milk yield of cows based on environmental and lactation factors. The envirionmental factors are temperature, humidity, cold stress, precipitation. The lactation factors are lactation number, calving date, first record date
 
