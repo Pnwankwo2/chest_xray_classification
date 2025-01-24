@@ -15,12 +15,11 @@ Column name and description (Source:https://zenodo.org/records/3962046)
 
 - lact_num: lactation number (number of times the cow has calfed).
 
-
 - calv_date: date of calving
 
 - alp_date: date of the first record taken in the alp (usually shortly after the arrival of the animal in the alp)
 
-- avg_milk: the average quantity of milk production in kilograms
+- avg_milk: the average quantity of milk production in kilograms measured across three milking records
   
 - avg_thi3: temperature humidity index, averaged over 3 days before the records, average over the 3 records taken in the alp
 
@@ -39,6 +38,7 @@ the average quantity of milk is the defined target column.
 Data Cleaning:
 Handle missing values and outliers.
 Encode categorical features if necessary.
+Feature Engineering.
 Normalize or standardize numerical features.
 Prepare the data for training and testing.
 
