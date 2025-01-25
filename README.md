@@ -18,7 +18,7 @@ The DataFrame has 20,000 rows and 10 columns for a period ranginwg from years 20
 
 The average quantity of milk is the defined target column.
 
-![Average Milk Over Three Milk Records (kg)](histogram.png)
+![Average Milk Over Three Milk Records (kg)](Resources/Average Milk Over Three Milk Records (kg).png)
 
 
 
