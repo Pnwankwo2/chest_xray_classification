@@ -28,7 +28,7 @@ There were 41 null values found which adjusted the DataFrame down from 20,000 to
  - 25% of the cows (4,981) produced less than 13.07 kilograms of milk.  
  - 50% of the cows (10,000) produced less than 15.60 kilograms of milk, and 50% (10,000) produce more.
  - 75% of the cows (14,992) produced less than 18.50 kilograms of milk.
- - 3,753 cows (approximately 68.9%) fall within one standard deviation of the mean milk production.
+ - 13,753 cows (approximately 68.9%) fall within one standard deviation of the mean milk production.
  - 19,067 cows (approximately 95.5%) fall within two standard deviations of the mean milk production.
  - 19,865 cows (approximately 99.53%) fall within 3 standard deviations of the mean milk production.
 
