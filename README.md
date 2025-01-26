@@ -4,7 +4,7 @@
 ## Milk Production Prediction 
 The Project Goal is to build an Artificial Neural Network (ANN) to accurately predict the average milk yield of cows based on environmental conditions (temperature, humidity, cold stress, precipitation) and lactation cycle information (lactation number, calving date, first record date). 
 
-1. Dataset
+1. Data Exploration
 
 The dataset has been extracted from the milk record database of the Braunvieh-CH breeding organisation, from [(Zenodo record)](https://zenodo.org/records/3962046) (Duruz, S., & Flury, C. (2020). The Rights of the dataset is cc0-1.0 icon Creative Commons Zero v1.0 Universal, making it freely usable without restriction. The dataset meets encoding to UT-8 standard. 
 
