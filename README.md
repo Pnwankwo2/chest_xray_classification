@@ -34,17 +34,17 @@ Only one cow in the dataset displayed the lowest milk production of 3.5 kg, cons
 
 Just two cows within the dataset demonstrated the highest milk production of 40.37 kg, representing outliers at the upper end of the distribution.
 
-Roughly 25% of the cows (4,981) produced less than 13.07 kilograms of milk.
+25% of the cows (4,981) produced less than 13.07 kilograms of milk.
 
-Half of the cows (10,000) produced less than 15.60 kilograms of milk, while the other half (10,000) produced more.
+50% of the cows (10,000) produced less than 15.60 kilograms of milk, while the other 50% (10,000) produced more.
 
-Seventy-five percent of the cows (14,992) produced under 18.50 kilograms of milk.
+75% of the cows (14,992) produced under 18.50 kilograms of milk.
 
 Approximately 68.9% (13,753 cows) fell within one standard deviation of the mean milk yield.
 
-Around 95.5% (19,067 cows) fell within two standard deviations of the mean milk yield.
+Approximately 95.5% (19,067 cows) fell within two standard deviations of the mean milk yield.
 
-A total of 99.53% (19,865 cows) fell within three standard deviations of the mean milk yield.
+Approximately 9.53% (19,865 cows) fell within three standard deviations of the mean milk yield.
 
 Based on these observations, it can be inferred that a substantial portion of the cows in the dataset exhibit an average milk yield ranging between 15 and 20 kilograms over the three milk records.
 
