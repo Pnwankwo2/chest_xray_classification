@@ -44,7 +44,7 @@ Approximately 68.9% (13,753 cows) fell within one standard deviation of the mean
 
 Approximately 95.5% (19,067 cows) fell within two standard deviations of the mean milk yield.
 
-Approximately 9.53% (19,865 cows) fell within three standard deviations of the mean milk yield.
+Approximately 99.53% (19,865 cows) fell within three standard deviations of the mean milk yield.
 
 Based on these observations, it can be inferred that a substantial portion of the cows in the dataset exhibit an average milk yield ranging between 15 and 20 kilograms over the three milk records.
 
