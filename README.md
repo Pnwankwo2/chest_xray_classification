@@ -20,7 +20,7 @@ The average milk yield was designated as the target variable ("Y") as the object
 
 After eliminating 41 missing values, the DataFrame was reduced to 19,959 rows and 10 columns. Analyzing the distribution of the target variable ("Y"), representing average milk yield across the three milking records, revealed the following:
 
-The distribution exhibits a positive skew, characterized by a greater number of data points concentrated on the right side, resulting in a longer tail. This indicates that a smaller number of cows produced significantly more milk compared to the majority of the herd.
+The distribution exhibits a positive skew, characterized by a greater number of data points concentrated on the right side, resulting in a longer tail. This indicates that a smaller number of cows produced significantly more milk compared to the majority of the cows in the dataset.
 
 The average milk yield across all cows is 15.92 kg, exceeding the median (middle) milk yield of 15.6 kg, which is a more representative measure in the presence of a skewed distribution.
 
