@@ -89,11 +89,11 @@ Overall, the correlation matrix primarily highlights potential associations betw
 
 Based on the observed correlations, potential reasons for cow ID 3844's exceptionally low milk yield (3.5 kg) include:
 
-**Environmental Stress**:**
+**Environmental Stress**:
 
 **High Temperature and Humidity (THI)**: While the given THI of 59.18 might not seem excessively high, prolonged exposure to high temperatures and humidity can negatively impact milk production.
 
-**Cold Stress**: The high cold stress index (CSI) values (1095.81 and 1040.56) suggest the cow may have experienced significant cold stress, which can reduce milk production.**
+**Cold Stress**: The high cold stress index (CSI) values (1095.81 and 1040.56) suggest the cow may have experienced significant cold stress, which can reduce milk production.
 
 **Heat Stress**: Although less likely with the given THI, heat stress during lactation could have significantly reduced milk production.
 
