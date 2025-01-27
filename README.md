@@ -90,9 +90,13 @@ Overall, the correlation matrix primarily highlights potential associations betw
 Based on the observed correlations, potential reasons for cow ID 3844's exceptionally low milk yield (3.5 kg) include:
 
 **Environmental Stress**:**
+
 **High Temperature and Humidity (THI)**: While the given THI of 59.18 might not seem excessively high, prolonged exposure to high temperatures and humidity can negatively impact milk production.
+
 **Cold Stress**: The high cold stress index (CSI) values (1095.81 and 1040.56) suggest the cow may have experienced significant cold stress, which can reduce milk production.**
+
 **Heat Stress**: Although less likely with the given THI, heat stress during lactation could have significantly reduced milk production.
+
 **Shorter-than-Ideal Dry Period**: The 277-day interval from calving to the first record might suggest a shorter dry period, which could have negatively impacted subsequent lactation.
 
 For cows ID 3923 and ID 6922, which exhibited exceptionally high milk yield (40.37 kg), potential contributing factors include:
@@ -100,14 +104,19 @@ For cows ID 3923 and ID 6922, which exhibited exceptionally high milk yield (40.
 **Optimal Environmental Conditions**:
 
 **Mild Climate**: The relatively low THI values (44.27) suggest a comfortable temperature and humidity environment, minimizing heat stress and potentially optimizing milk production.
+
 **Moderate Cold Stress**: While cold stress can negatively impact milk production, the CSI values (1088.68 and 1140.58) might indicate a moderate level of cold stress, which could potentially stimulate feed intake and milk production in some breeds.
+
 **Adequate Forage**: The average spring precipitation of 182.88 mm/month suggests sufficient rainfall for good pasture growth, providing the cow with ample high-quality forage for milk production.
+
 **Shorter Calving-to-Alpine Grazing Interval**: The short interval of 11 days between calving and the start of the Alpine grazing period might have positively influenced milk production in these cows. However, this can vary depending on the individual cow and breed.
 
 **Important Considerations**:
 
 **Correlation vs. Causation**: It is crucial to remember that correlation does not imply causation. Further analysis, such as regression analysis, is necessary to determine the causal relationships between these variables.
+
 **Data Limitations**: The provided data represents a snapshot of the cow's condition and environment. Factors such as the cow's health, nutrition, feeding management, reproduction, genetics, age, breed, and previous lactation history can significantly influence milk production and are not included in this dataset.
+
 **Need for Further Investigation**: To determine the specific reasons for low or high milk production in these cows, further investigation is necessary. This could include examining the cow's medical history, feeding records, and environmental conditions more thoroughly. Long-term monitoring of various factors, including feed intake, body condition score, and reproductive health, is also crucial for a more comprehensive understanding.
 
 2. **Data Preprocessing**:
