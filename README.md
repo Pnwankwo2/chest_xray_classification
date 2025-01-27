@@ -56,9 +56,9 @@ To understand the factors contributing to the exceptionally low milk yield of co
 
 **Correlation coefficients range from -1 to 1**:
 
-1.00: Perfect positive correlation (as one variable increases, the other increases proportionally).
+ 1.00: Perfect positive correlation (as one variable increases, the other increases proportionally).
 -1.00: Perfect negative correlation (as one variable increases, the other decreases proportionally).
-0.00: No correlation between the variables.
+ 0.00: No correlation between the variables.
 The diagonal of the correlation matrix (top-left to bottom-right) always shows correlations of each variable with itself, which are 1.00.
 
 **Key Correlations Observed**
@@ -69,11 +69,11 @@ The diagonal of the correlation matrix (top-left to bottom-right) always shows c
 Exhibits strong negative correlations with avg_thi3 (-0.33), avg_csi3 (-0.17), avg_thi30 (-0.27), and date_diff (-0.52). This indicates that cows with higher average milk production tend to have lower values for these variables.
 Shows a positive correlation with avg_precspring (0.16), suggesting that higher average spring precipitation might be associated with slightly higher milk production.
 
-**Temperature Humidity Index (avg_thi3)**: Exhibits strong negative correlations with avg_csi3 (-0.83), avg_thi30 (-0.77), and date_diff (0.55), indicating strong relationships between these variables.
+**Temperature Humidity Index averaged over 3 day period (avg_thi3)**: Exhibits strong negative correlations with avg_csi3 (-0.83), avg_thi30 (-0.77), and date_diff (0.55), indicating strong relationships between these variables.
 
-**Cold Stress Index (avg_csi3)**: Exhibits a strong negative correlation with avg_thi3 (-0.83) and a high positive correlation with avg_thi30 (0.69), indicating a strong relationship between these temperature and cold stress indices.
+**Cold Stress Index averaged over 3 day period (avg_csi3)**: Exhibits a strong negative correlation with avg_thi3 (-0.83) and a high positive correlation with avg_thi30 (0.69), indicating a strong relationship between these temperature and cold stress indices.
 
-**Cold Stress Index (avg_csi30)**: Shows high positive correlations with avg_thi3 (-0.77) and avg_csi3 (0.69), further emphasizing the interconnectedness of these variables.
+**Cold Stress Index averaged over 30 day period (avg_csi30)**: Shows high positive correlations with avg_thi3 (-0.77) and avg_csi3 (0.69), further emphasizing the interconnectedness of these variables.
 
 **Average Spring Precipitation (avg_precspring)**: Has a moderate positive correlation with date_diff (0.28), suggesting that cows with longer intervals between calving and the start of the Alpine grazing season might have experienced higher average spring precipitation.
 
