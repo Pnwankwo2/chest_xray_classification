@@ -7,6 +7,7 @@ The Project Goal is to build an Artificial Neural Network (ANN) to accurately pr
 1. **Data Exploration**
 
 **Braunvieh-CH Dairy Herd Dataset**
+
 The dataset has been extracted from the milk record database of the Braunvieh-CH breeding organisation, from [(Zenodo record)](https://zenodo.org/records/3962046) (Duruz, S., & Flury, C. (2020).  Braunvieh is a type of brown cattle originating in Switzerland. CH is the latin words "Confoedaratio Helvetica", meaning Swiss Confederation. The dataset is freely available under a CC0 1.0 Universal license, permitting unrestricted use. Encoded in UTF-8 format, the dataset encompasses information on 20,000 cows across 10 variables, presented in a DataFrame with 20,000 rows and 10 columns. The data covers a period ranging from the year 2000 to 2015.
 
 The dataset includes details on the following aspects of the cows:
