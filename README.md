@@ -16,11 +16,15 @@ The dataset includes details on the following aspects of the cows:
 
 **Environmental factors**: Temperature Humidity Index (THI) averaged over 3 and 30 day periods, Cold Stress Index (CSI) averaged over 3 and 30 day periods, and precipitation levels during spring.
 
+After eliminating 41 missing values, the DataFrame was reduced to 19,959 rows and 10 columns. 
+
+**Target column**
+
 The average milk yield was designated as the target variable ("Y") as the objective is to predict future milk production.
 
-After eliminating 41 missing values, the DataFrame was reduced to 19,959 rows and 10 columns. Analyzing the distribution of the target variable ("Y"), representing average milk yield across the three milking records, revealed the following:
+Analyzing the distribution of the target variable ("Y"), representing average milk yield across the three milking records, revealed the following:
 
-The distribution exhibits a positive skew, characterized by a greater number of data points concentrated on the right side, resulting in a longer tail. This indicates that a smaller number of cows produced significantly more milk compared to the majority of the cows in the dataset.
+The positively/right-skewed distribution indicates that most cows in the dataset produce relatively low amounts of milk, while a smaller number of high-producing cows contribute to a longer tail on the right side of the distribution.
 
 The average milk yield across all cows is 15.92 kg, exceeding the median (middle) milk yield of 15.6 kg, which is a more representative measure in the presence of a skewed distribution.
 
@@ -48,9 +52,25 @@ Approximately 99.53% (19,865 cows) fell within three standard deviations of the 
 
 Based on these observations, it can be inferred that a substantial portion of the cows in the dataset exhibit an average milk yield ranging between 15 and 20 kilograms over the three milk records.
 
+**X Features**
+
+To explore the distribution of key environmental factors, we created and analyzed histograms for various features ('X' features) related to environmental conditions and milk production in cows:
+
+**Temperature Humidity Index averaged over a 3 day period:** The distribution is roughly bell-shaped, suggesting a relatively normal distribution of THI values.
+
+**Cold Stress Index averaged over a 3 day period:** It is also roughly bell-shaped, indicating a relatively normal distribution of CSI values.
+
+**Temperature Humidity Index averaged over a 30 day period:** This distribution is also bell-shaped, similar to the 3-day average THI.
+
+**Codl Stress Index averaged over a 30 day period:** It is also bell-shaped, like the 3-day average CSI.
+
+**Average Precipitation During Spring (mm/month):** The distribution is right-skewed, suggesting that a majority of the cows experienced lower levels of spring precipitation.
+
+**Inferences**: The relatively normal distributions of THI and CSI values over different time periods suggest that these environmental factors exhibit consistency across the dataset.
+
 **Investigating Extreme Milk Yield Cases**
 
-To understand the factors contributing to the exceptionally low milk yield of cow ID 3844 (3.5 kg) and the exceptionally high yield of cows ID 3923 and ID 6922 (both at 40.37 kg), we analyzed the relationships between various factors and milk production using a correlation matrix which provided valuable insights into these potential relationships.
+To understand the factors contributing to the exceptionally low milk yield of cow ID 3844 (3.5 kg) and the exceptionally high yield of cows ID 3923 and ID 6922 (both at 40.37 kg), we further analyzed the relationships between various factors and milk production using a correlation matrix which provided valuable insights into these potential relationships.
 
 **Correlation Matrix Overview**
 
@@ -69,11 +89,11 @@ The diagonal of the correlation matrix (top-left to bottom-right) always shows c
 Exhibits strong negative correlations with avg_thi3 (-0.33), avg_csi3 (-0.17), avg_thi30 (-0.27), and date_diff (-0.52). This indicates that cows with higher average milk production tend to have lower values for these variables.
 Shows a positive correlation with avg_precspring (0.16), suggesting that higher average spring precipitation might be associated with slightly higher milk production.
 
-**Temperature Humidity Index averaged over 3 day period (avg_thi3)**: Exhibits strong negative correlations with avg_csi3 (-0.83), avg_thi30 (-0.77), and date_diff (0.55), indicating strong relationships between these variables.
+**Temperature Humidity Index averaged over a 3 day period (avg_thi3)**: Exhibits strong negative correlations with avg_csi3 (-0.83), avg_thi30 (-0.77), and date_diff (0.55), indicating strong relationships between these variables.
 
-**Cold Stress Index averaged over 3 day period (avg_csi3)**: Exhibits a strong negative correlation with avg_thi3 (-0.83) and a high positive correlation with avg_thi30 (0.69), indicating a strong relationship between these temperature and cold stress indices.
+**Cold Stress Index averaged over a 3 day period (avg_csi3)**: Exhibits a strong negative correlation with avg_thi3 (-0.83) and a high positive correlation with avg_thi30 (0.69), indicating a strong relationship between these temperature and cold stress indices.
 
-**Cold Stress Index averaged over 30 day period (avg_csi30)**: Shows high positive correlations with avg_thi3 (-0.77) and avg_csi3 (0.69), further emphasizing the interconnectedness of these variables.
+**Cold Stress Index averaged over a 30 day period (avg_csi30)**: Shows high positive correlations with avg_thi3 (-0.77) and avg_csi3 (0.69), further emphasizing the interconnectedness of these variables.
 
 **Average Spring Precipitation (avg_precspring)**: Has a moderate positive correlation with date_diff (0.28), suggesting that cows with longer intervals between calving and the start of the Alpine grazing season might have experienced higher average spring precipitation.
 
@@ -120,9 +140,8 @@ For cows ID 3923 and ID 6922, which exhibited exceptionally high milk yield (40.
 **Need for Further Investigation**: To determine the specific reasons for low or high milk production in these cows, further investigation is necessary. This could include examining the cow's medical history, feeding records, and environmental conditions more thoroughly. Long-term monitoring of various factors, including feed intake, body condition score, and reproductive health, is also crucial for a more comprehensive understanding.
 
 2. **Data Preprocessing**:
-
-Data Cleaning:
-Handle missing values and outliers.
+we looked at data leakage  and VIF etc
+based on the described correlatiom matrix above we understood how environmental factors (THI, CSI, precipitation relate to each other, which environ, 
 Encode categorical features if necessary.
 Feature Engineering.
 Normalize or standardize numerical features.
