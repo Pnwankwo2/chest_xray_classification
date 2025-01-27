@@ -131,6 +131,7 @@ Prepare the data for training and testing.
 
 
 **Addendum No.1: References/Citations**
+
 Duruz, S., & Flury, C. (2020). Milk production and environmental conditions of mountain-pastured Braunvieh cows between 2000 and 2015 [Data set]. Zenodo. https://doi.org/10.5061/dryad.z612jm68g
  
 
