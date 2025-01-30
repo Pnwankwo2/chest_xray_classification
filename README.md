@@ -4,7 +4,7 @@
 ## Milk Production Prediction 
 The Project Goal is to build an Artificial Neural Network (ANN) to accurately predict the average milk yield of cows based on environmental conditions (temperature, humidity, cold stress, precipitation) and lactation cycle information (lactation number, calving date, first record date). 
 
-1. **Data Exploration**
+**Data Exploration and cleaning**
 
 **Braunvieh-CH Dairy Herd Dataset**
 
@@ -139,11 +139,16 @@ For cows ID 3923 and ID 6922, which exhibited exceptionally high milk yield (40.
 
 **Need for Further Investigation**: To determine the specific reasons for low or high milk production in these cows, further investigation is necessary. This could include examining the cow's medical history, feeding records, and environmental conditions more thoroughly. Long-term monitoring of various factors, including feed intake, body condition score, and reproductive health, is also crucial for a more comprehensive understanding.
 
-2. **Data Preprocessing**:
-we looked at data leakage  and VIF etc
-based on the described correlatiom matrix above we understood how environmental factors (THI, CSI, precipitation relate to each other, which environ, 
-Encode categorical features if necessary.
-Feature Engineering.
+***Feature Engineering*** 
+Carried out the following to prepare the data for modeling:
+- Converted date features (calving date, first record date) into Datetime format to calculate lactation period. 
+- Calculated the time which elapsed between calving and the first record of the cow in the alp (lactation duration). An observation of the data shows this could be a significant predictor as smaller lactation duration shows relatively higher milk production (inter alia).
+- we replaced datetime columns with numerical separate numerical columns for month and day, which can be useful for modeling while avoiding potential issues with multicollinearity. 
+- To address multicollinearity, we removed columns from thi30 that exhibited the following characteristics:
+    - A Variance Inflation Factor (VIF) exceeding 5.
+    - A correlation coefficient of -0.90 with the 'avg_csi30' variable. This strong negative correlation (close to -1) with the 30-day average Cold Stress Index indicates a high degree of multicollinearity. 
+
+***ANN Modeling***
 Normalize or standardize numerical features.
 Prepare the data for training and testing.
 
