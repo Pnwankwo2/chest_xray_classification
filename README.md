@@ -4,6 +4,13 @@
 ## Milk Production Prediction 
 The Project Goal is to build an Artificial Neural Network (ANN) to accurately predict the average milk yield of cows based on environmental conditions (temperature, humidity, cold stress, precipitation) and lactation cycle information (lactation number, calving date, first record date). 
 
+### About this repo
+•	Our model is made in milking_the_data.ipynb
+
+•	Our tuned model is saved as milking_the_data.keras
+
+•	Our Gradio application is made in milk_gradio.ipynb
+
 **Data Exploration and cleaning**
 
 **Braunvieh-CH Dairy Herd Dataset**
