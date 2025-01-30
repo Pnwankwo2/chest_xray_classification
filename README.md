@@ -144,6 +144,29 @@ Carried out the following to prepare the data for modeling:
 - Converted date features (calving date, first record date) into Datetime format to calculate lactation period. 
 - Calculated the time which elapsed between calving and the first record of the cow in the alp (lactation duration). An observation of the data shows this could be a significant predictor as smaller lactation duration shows relatively higher milk production (inter alia).
 - we replaced datetime columns with numerical separate numerical columns for month and day, which can be useful for modeling while avoiding potential issues with multicollinearity. 
+PON
+1.	We calculated VIF for numerical features to identify multicollinearity.
+
+After calculating VIF we found the foloowing values:
+•	avg_thi3 (VIF = 10.78)
+•	avg_thi30 (VIF = 15.41)
+•	avg_csi30 (VIF = 8.77)
+
+The dataset also contained missing Values in the VIF calculation in the following columns:
+•	avg_thi3: 41 missing values
+•	avg_csi3: 41 missing values
+•	avg_thi30: 41 missing values
+•	avg_csi30: 41 missing values
+
+To address this, we 
+1.	Dropped rows with missing values.
+2.	Dropped avg_thi30 to eliminate multicollinearity since avg_thi30 has the highest VIF value and recalculated the VIF.
+
+Upon removal of avg_thi30, the multicollinearity is significantly reduced. 
+All remaining features have acceptable VIF values (below 10).
+
+PON
+
 - To address multicollinearity, we removed columns from thi30 that exhibited the following characteristics:
     - A Variance Inflation Factor (VIF) exceeding 5.
     - A correlation coefficient of -0.90 with the 'avg_csi30' variable. This strong negative correlation (close to -1) with the 30-day average Cold Stress Index indicates a high degree of multicollinearity. 
