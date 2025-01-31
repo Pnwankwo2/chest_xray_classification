@@ -172,17 +172,17 @@ To address this, we
 Upon removal of avg_thi30, the multicollinearity is significantly reduced. 
 All remaining features have acceptable VIF values (below 10).
 
-PON
-
-- To address multicollinearity, we removed columns from thi30 that exhibited the following characteristics:
-    - A Variance Inflation Factor (VIF) exceeding 5.
-    - A correlation coefficient of -0.90 with the 'avg_csi30' variable. This strong negative correlation (close to -1) with the 30-day average Cold Stress Index indicates a high degree of multicollinearity. 
-
 ***ANN Modeling***
-Normalize or standardize numerical features.
-Prepare the data for training and testing.
 
+ANNs were chosen because they handle complexity, adapt well to variability, and provide scalable, high-performance predictions, making them ideal for forecasting milk production in dynamic environmental conditions.  It was clearly scalable and adaptable for future improvements. It also provided more accurate, data-driven insights for optimizing milk production overall.
+This journey demonstrated how ANNs can transform complex datasets into actionable predictions, offering a powerful tool for modern dairy farming
 
+The result of our tuner search was a 5 layer model. 5 neurons in our input layer, then 5, 9 and 29 in the three hidden layers before finishing with our output layer.
+
+The optimal optimizer was RMSprop. RMSprop is designed to handle sparse gradients efficiently, ensuring that the learning process remains stable and robust, and is able to adapt the learning rate on each parameter. This means that it can account for the varying importance of different features over time, handling things like low variation in the data, and noise.
+
+The Mean Absolute Error of our tuned model is 2.439
+This means our predictions are roughly 2.439 kg of from the actual values. Given our range of average milk values (roughly 3 to 40), this error is relatively small but still leaves some room for improvement.
 
 **Addendum No.1: References/Citations**
 
